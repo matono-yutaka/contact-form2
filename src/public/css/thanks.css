@@ -1,0 +1,60 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks__content {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1230px;
+}
+
+.thanks__heading {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #9c8774;
+}
+
+.thanks__content {
+  text-align: center;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #796756;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.thanks__content {
+  position: relative;
+  text-align: center;
+  padding: 30px 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.thanks__content::before {
+  content: "Thank you";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  color: rgba(0, 0, 0, 0.05); /* 薄く黒っぽく */
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+}
